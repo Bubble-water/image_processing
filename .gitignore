@@ -1,0 +1,12 @@
+#ignore file--type file
+*.log
+*.tar
+*.pyc
+*.csv
+*.pyc
+*.rar
+*.zip
+*.gz
+*.jpg
+#ignore folders--path
+save/
