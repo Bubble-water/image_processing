@@ -92,7 +92,7 @@ def processing_crop_image(img, window_size, stride,rate,path,padding=None,resize
                 end_y= window_size[1] + start_y
                 start_x = width - window_size[0]
                 end_x = width
-                crop_image = img[start_y:end_y,start_y:end_y]
+                crop_image = img[start_y:end_y,start_x:end_x]
                 cv2.imwrite(path+str(count)+".jpg",crop_image)
                 count += 1
             for j in range(w):
