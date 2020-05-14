@@ -108,20 +108,11 @@ def processing_crop_image(img, window_size, stride,rate,path,padding=None,resize
             count += 1
 
 if __name__ == "__main__":
-    """
-    path = "./save1/"
-    image_path = "E:\\BaiduNetdiskDownload\\test_data\\ruifeng_mac4\\3014\\crop_erro\\20200415133201\\1.jpg"
-    img = cv2.imread(image_path)
-    # print(img.shape)
-    window_size=[2049,5300]
-    stride=[2048,5300]
-    rate = [1,1]
-    processing_crop_image(img, window_size, stride,rate,path)
-    """
     import os
+    import sys
     import cv2
-    save_path = "E:\\BaiduNetdiskDownload\\test_data\\ruifeng_mac4\\3014\\train"
-    target_image_path = "E:\\BaiduNetdiskDownload\\test_data\\ruifeng_mac4\\3014\\zheng-0411"
+    save_path = sys.argv[1]
+    target_image_path = sys.argv[2]
     window_size=[1664,1664]
     stride=[608,608]
     rate = [1,1]

@@ -95,16 +95,16 @@ def statistics_classes2plot(object_dict,save_name,title,mark=0):
     plt.savefig('images_picture/%s.png'%save_name, format='png')
 
 if __name__ == "__main__":
-    # xml_path = sys.argv[1]
+    xml_path = sys.argv[1]
     """
-    xml_path = "E:\\BaiduNetdiskDownload\\test_data\\ruifeng_mac1\\yolo\\mydigit\\Annotations"
+    xml_path = sys.argv[1]
     object_dict = calculate_object_number_xml(xml_path)
     print("object_dict:",object_dict)
     save_name = "xml"
     title = "xml_object"
     statistics_classes2plot(object_dict,save_name,title)
     """
-    json_path = "D:\\download\\chongqing1_round1_train1_20191223\\chongqing1_round1_train1_20191223\\annotations.json"
+    json_path = sys.argv[1]
     counts_label = calculate_object_number_json(json_path)
     print("counts_label:",counts_label)
     save_name = "json"
